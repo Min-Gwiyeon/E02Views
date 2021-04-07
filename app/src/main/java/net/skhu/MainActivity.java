@@ -52,6 +52,11 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
             Log.d(TAG,"checkboxes");
             return true;
+        }else if (id == R.id.action_spinners){
+            Intent intent = new Intent(this, SpinnersActivity.class);
+            startActivity(intent);
+            Log.d(TAG,"spinners");
+            return true;
         }
         Log.d(TAG,"selected close");
         return super.onOptionsItemSelected(item);
